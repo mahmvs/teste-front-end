@@ -1,31 +1,67 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# 🛒 Ecommerce Teste para Econverse
 
-### Vem ser #Econverse!
+Este projeto é um **ecommerce de teste** desenvolvido como parte do processo seletivo para a **Econverse**. O objetivo foi criar uma aplicação web funcional que simula uma loja virtual, com foco em boas práticas de desenvolvimento, usabilidade e desempenho.
 
-Segue abaixo as instruções para a execução do teste.
+## 🎯 Objetivo
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+Desenvolver uma interface de ecommerce que inclui:
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+- **Listagem de produtos**: Exibição dos produtos em um layout responsivo.
+- **Filtros e categorias**: Funcionalidades para filtrar e organizar os produtos.
+- **Carrinho de compras**: Adição e remoção de itens, com cálculo do valor total.
+- **Design moderno**: Utilização de Sass para estilização e componentes reutilizáveis.
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+## 🚀 Tecnologias Utilizadas
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+- **[React](https://reactjs.org/)**: Biblioteca para construção da interface do usuário.
+- **[TypeScript](https://www.typescriptlang.org/)**: Para tipagem estática e maior segurança no código.
+- **[Sass](https://sass-lang.com/)**: Pré-processador CSS para estilização avançada.
+- **[Vite](https://vitejs.dev/)**: Ferramenta de build e servidor de desenvolvimento rápido.
+- **[React Router](https://reactrouter.com/)**: Para gerenciamento de rotas na aplicação.
+- **[Context API](https://reactjs.org/docs/context.html)**: Para gerenciamento de estado global (carrinho de compras).
 
-**Boa sorte! ;)**
+## 🛠️ Como Executar o Projeto
+
+### 📋 Pré-requisitos
+
+Antes de começar, certifique-se de ter os seguintes softwares instalados:
+
+- **[Node.js](https://nodejs.org/)** (versão 16 ou superior)
+- **[npm](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)** (gerenciadores de pacotes)
+- **[Git](https://git-scm.com/)** (opcional, mas recomendado para clonar o repositório)
+
+### 🔧 Passo 1: Clonar o Repositório
+
+Se você estiver usando Git, clone o repositório para sua máquina:
+
+```bash
+git clone https://github.com/mahmvs/teste-front-end.git
+```
+
+## 📂 Passo 2: Navegar até a Pasta do Projeto
+
+Acesse a pasta do projeto:
+
+```bash
+cd teste-front-end
+```
+
+## 📦 Passo 3: Instalar as Dependências
+
+Instale todas as dependências necessárias para o projeto.
+
+### Usando **npm**:
+
+```bash
+npm install
+```
+
+## 🚀 Passo 4: Rodar o Projeto em Modo de Desenvolvimento
+
+Para rodar o projeto localmente em modo de desenvolvimento, siga estas etapas:
+
+1. **Inicie o servidor de desenvolvimento**:
+
+   ```bash
+   npm run dev
+   ```
