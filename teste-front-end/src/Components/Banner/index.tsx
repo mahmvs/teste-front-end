@@ -10,6 +10,7 @@ export function Banner() {
       <div className={styles.bannerContent}>
         <h2>Venha conhecer nossas <br />promoções</h2>
         <p><span className={styles.bannerSpan}>50% Off</span> nos produtos</p>
+        <button className={styles.bannerButton}>Ver produto</button>
       </div>
     </section>
   )

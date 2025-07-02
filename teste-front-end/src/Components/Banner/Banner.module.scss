@@ -27,9 +27,12 @@
   .bannerContent {
     position: absolute; 
     z-index: 2;
-    text-align: center;
+    text-align: left;
     padding: 20px;
     color: #fff;
+  left: 5rem; 
+  top: 2%; 
+  
 
     h2 {
       font-size: 3rem;
@@ -51,6 +54,23 @@
         font-weight: 700;
         font-size: 2rem;
         color: #F7CA11;
+    }
+  }
+  .bannerButton {
+    background-color: #F7CA11;
+    color: #271C47;
+    padding: 7px 49px 7px 49px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #250f8b;
+      color:#F7CA11;
     }
   }
 }
