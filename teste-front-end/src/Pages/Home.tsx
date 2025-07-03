@@ -17,7 +17,7 @@ import HealthIcon from '../assets/saude.svg';
 import FitnessIcon from '../assets/corrida.svg';
 import ModaIcon from '../assets/moda.svg';
 import { SubCategory } from '../Components/SubCategory';
-import { MdOutlineProductionQuantityLimits } from 'react-icons/md';
+
 
 
 export function Home() {

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+    position: relative;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+.name{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: 'poppins';
+    color: #3F3F40;
+}
+.imageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.price {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  font-family: 'poppins';
+  color: #3F3F40;
+}
+
+.description {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.6rem;
+  color: #9F9F9F;
+}
+.detail{
+    font-size: 0.6rem;
+  color: #3442B5;
+}
+
+.quantityContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  span {
+    width: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 10px;
+  }
+}
+
+.buyButton {
+  background-color: #F7CA11;
+  color: #271C47;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+
+  &:hover {
+    background-color: #e6b800;
+  }
+}
+
+.closeButton {
+    position: absolute;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #271C47;
+  cursor: pointer;
+  top: 10%;
+  right: 5%;
+}
+.modalHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.modalBuySection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 1rem;
+    
+}
