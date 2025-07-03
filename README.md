@@ -1,4 +1,5 @@
 🛒 Projeto Econverse - Front-End
+
 Este é um projeto desenvolvido para o desafio front-end da Econverse, contendo categorias de produtos, filtros e um modal com detalhes do produto.
 
 📦 Tecnologias Utilizadas
