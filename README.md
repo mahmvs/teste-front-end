@@ -56,18 +56,18 @@ Quantidade de produto ajustável visualmente no modal
 
 📂 Estrutura de Pastas
 src
-assets         
-# Imagens e ícones
-components     
-# Componentes reutilizáveis
-pages           
-# Páginas principais (ex: Modal, Home)
-styles          
-# Arquivos SCSS
-App.tsx         
-# Estrutura principal da aplicação
-main.tsx        
-# Arquivo de entrada
+- assets         
+Imagens e ícones
+- components     
+Componentes reutilizáveis
+- pages           
+Páginas principais (ex: Modal, Home)
+- styles          
+Arquivos SCSS
+- App.tsx         
+Estrutura principal da aplicação
+- main.tsx        
+Arquivo de entrada
 
 📫 Contato
 Se tiver dúvidas ou sugestões, entre em contato:
