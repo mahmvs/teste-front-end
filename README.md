@@ -1,31 +1,81 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+🛒 Projeto Econverse - Front-End
+Este é um projeto desenvolvido para o desafio front-end da Econverse, contendo categorias de produtos, filtros e um modal com detalhes do produto.
 
-### Vem ser #Econverse!
+📦 Tecnologias Utilizadas
+React
 
-Segue abaixo as instruções para a execução do teste.
+TypeScript
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+SCSS (CSS Modules)
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+Vite
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+🚀 Instruções para rodar o projeto
+1. Clonar o repositório
+bash
+Copiar
+Editar
+git clone https://github.com/seu-usuario/seu-repositorio.git
+2. Acessar a pasta do projeto
+bash
+Copiar
+Editar
+cd nome-da-pasta
+3. Instalar as dependências
+bash
+Copiar
+Editar
+npm install
+4. Rodar o projeto
+bash
+Copiar
+Editar
+npm run dev
+O projeto estará disponível no navegador no endereço: http://localhost:5173
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+✅ Como compilar para produção
+Se desejar gerar os arquivos para produção, execute:
 
-**Boa sorte! ;)**
+bash
+Copiar
+Editar
+npm run build
+Os arquivos compilados estarão disponíveis na pasta /dist.
+
+🧪 Testes
+Este projeto ainda não possui testes automatizados.
+Caso queira implementar, você pode utilizar:
+
+Jest
+
+React Testing Library
+
+💻 Funcionalidades Implementadas
+Exibição de categorias e subcategorias
+
+Listagem de produtos
+
+Modal de detalhes do produto
+
+Quantidade de produto ajustável visualmente no modal
+
+📂 Estrutura de Pastas
+bash
+Copiar
+Editar
+src
+├── assets          # Imagens e ícones
+├── components      # Componentes reutilizáveis
+├── pages           # Páginas principais (ex: Modal, Home)
+├── styles          # Arquivos SCSS
+├── App.tsx         # Estrutura principal da aplicação
+└── main.tsx        # Arquivo de entrada
+📫 Contato
+Se tiver dúvidas ou sugestões, entre em contato:
+
+Nome: Maiara de Mello Von Scharte
+
+Email: maiaramellovon@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/maiaramellovonscharte
+
