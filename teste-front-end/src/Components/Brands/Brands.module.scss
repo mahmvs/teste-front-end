@@ -1,0 +1,18 @@
+
+
+.brandsContainer {
+  width: 150px; 
+  height: 150px; 
+  background-color: #fff;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.brandsContainer img {
+  width: 70%; 
+  height: auto;
+}

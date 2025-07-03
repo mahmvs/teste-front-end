@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+.titleContainer{
+       display: flex;
+  align-items: center;
+  gap: 1rem;
+    
+    .title{
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #3442B5;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+         white-space: nowrap;
+        
+    }
+    .liner{
+        flex:1;
+        height: 1px;
+        background-color: #DEDEDE;
+    }
+}
+
+.productCard{
+      display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 315px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    img{
+        width: 100%;
+        height: 150px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+     span {
+    text-align: left;
+    width: 100%; 
+  }
+
+    .productName{
+        font-size: 0.7rem;
+        font-weight: 300;
+        color: #3F3F40;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 0.5rem;
+    
+    }
+
+    .oldPrice{
+        font-size: 0.7rem;
+        font-weight: 300;
+        color: #9F9F9F;
+        text-decoration: line-through;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .price{
+        font-size: 1rem;
+        font-weight: 700;
+        color: #3F3F40;
+        font-family: 'Poppins', sans-serif;
+    
+    }
+    .installment{
+        font-size: 0.6rem;
+        font-weight: 300;
+        color: #3F3F40;
+        font-family: 'Poppins', sans-serif;
+
+    }
+    
+    .shipping{
+        font-size: 0.6rem;
+        font-weight: 300;
+        color: #3442B5;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 0.5rem;
+    }
+
+    .button{
+        background-color: #3442B5;
+        color: #FFFFFF;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        transition: background-color 0.3s ease;
+
+        &:hover{
+            background-color: #2832A1;
+        }
+    }
+}
+

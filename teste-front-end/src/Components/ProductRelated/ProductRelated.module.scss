@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+.ProductRelated {
+  
+}
+
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3442B5;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+  }
+
+  .line {
+    flex: 1;
+    height: 1px;
+    background-color: #DEDEDE;
+  }
+}

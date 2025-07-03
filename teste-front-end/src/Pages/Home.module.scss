@@ -1,0 +1,45 @@
+.relatedProductsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+
+  
+}
+.category {
+    display: flex;
+    justify-content: center;
+    gap: 1rem ;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.partnersContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 2rem;
+    
+    background-color: #f8f9fa;
+}
+.titleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin-bottom: 2rem;
+
+    .title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #3442B5;
+        font-family: 'Poppins', sans-serif;
+        white-space: nowrap;
+    }
+}
