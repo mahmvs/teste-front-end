@@ -12,34 +12,28 @@ Vite
 
 🚀 Instruções para rodar o projeto
 1. Clonar o repositório
-bash
-Copiar
-Editar
+   
 git clone https://github.com/seu-usuario/seu-repositorio.git
-2. Acessar a pasta do projeto
-bash
-Copiar
-Editar
+
+3. Acessar a pasta do projeto
+
 cd nome-da-pasta
-3. Instalar as dependências
-bash
-Copiar
-Editar
+
+6. Instalar as dependências
+   
 npm install
-4. Rodar o projeto
-bash
-Copiar
-Editar
+
+8. Rodar o projeto
+9. 
 npm run dev
+
 O projeto estará disponível no navegador no endereço: http://localhost:5173
 
 ✅ Como compilar para produção
 Se desejar gerar os arquivos para produção, execute:
 
-bash
-Copiar
-Editar
 npm run build
+
 Os arquivos compilados estarão disponíveis na pasta /dist.
 
 🧪 Testes
@@ -60,9 +54,6 @@ Modal de detalhes do produto
 Quantidade de produto ajustável visualmente no modal
 
 📂 Estrutura de Pastas
-bash
-Copiar
-Editar
 src
 ├── assets          # Imagens e ícones
 ├── components      # Componentes reutilizáveis
