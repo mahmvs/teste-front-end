@@ -1,5 +1,4 @@
-import React from 'react';
-import styles from './Category.module.scss';
+import styles from "./Category.module.scss";
 
 interface CategoryProps {
   icon: string;
@@ -8,13 +7,11 @@ interface CategoryProps {
 
 export function Category({ icon, name }: CategoryProps) {
   return (
-    
     <div className={styles.categoryItem}>
-    <div className={styles.categorysub}>
-      <img src={icon} alt={`Ícone de ${name}`} />
+      <div className={styles.categorysub}>
+        <img src={icon} alt={`Ícone de ${name}`} />
+      </div>
+      <p className={styles.categoryText}>{name}</p>
     </div>
-    <p className={styles.categoryText}>{name}</p>
-    </div> 
-    
   );
 }

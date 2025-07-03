@@ -1,111 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-
-.titleContainer{
-       display: flex;
+.titleContainer {
+  display: flex;
   align-items: center;
   gap: 1rem;
-    
-    .title{
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: #3442B5;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-         white-space: nowrap;
-        
-    }
-    .liner{
-        flex:1;
-        height: 1px;
-        background-color: #DEDEDE;
-    }
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3442b5;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .liner {
+    flex: 1;
+    height: 1px;
+    background-color: #dedede;
+  }
+}
+.carouselContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
-.productCard{
-      display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
-    border-radius: 8px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    height: 315px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.carouselButton {
+  background-color: #3442b5;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
 
-    img{
-        width: 100%;
-        height: 150px;
-        border-radius: 8px;
-        object-fit: cover;
-    }
-     span {
-    text-align: left;
-    width: 100%; 
+  &:hover:not(:disabled) {
+    background-color: #2832a1;
+    transform: scale(1.1);
   }
 
-    .productName{
-        font-size: 0.7rem;
-        font-weight: 300;
-        color: #3F3F40;
-        font-family: 'Poppins', sans-serif;
-        margin-top: 0.5rem;
-    
-    }
-
-    .oldPrice{
-        font-size: 0.7rem;
-        font-weight: 300;
-        color: #9F9F9F;
-        text-decoration: line-through;
-        font-family: 'Poppins', sans-serif;
-    }
-
-    .price{
-        font-size: 1rem;
-        font-weight: 700;
-        color: #3F3F40;
-        font-family: 'Poppins', sans-serif;
-    
-    }
-    .installment{
-        font-size: 0.6rem;
-        font-weight: 300;
-        color: #3F3F40;
-        font-family: 'Poppins', sans-serif;
-
-    }
-    
-    .shipping{
-        font-size: 0.6rem;
-        font-weight: 300;
-        color: #3442B5;
-        font-family: 'Poppins', sans-serif;
-        margin-top: 0.5rem;
-    }
-
-    .button{
-        background-color: #3442B5;
-        color: #FFFFFF;
-        padding: 0.5rem 1rem;
-        width: 100%;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        font-size: 0.8rem;
-        margin-top: 0.5rem;
-        transition: background-color 0.3s ease;
-
-        &:hover{
-            background-color: #2832A1;
-        }
-    }
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 }
 
+/* Botões do carrossel herdam estilos de .carouselButton */
+
+.productsGrid {
+  width: 100%;
+  overflow: hidden;
+  max-width: 1000px;
+}
+
+.productsWrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+  gap: 1rem;
+}
+
+.productCard {
+  flex: 0 0 calc(25% - 0.75rem);
+  min-width: 180px;
+  max-width: 200px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 420px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 0.8rem;
+    background-color: #f8f8f8;
+  }
+
+  span {
+    text-align: left;
+    width: 100%;
+  }
+
+  .productName {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #3f3f40;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.6rem;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .oldPrice {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #9f9f9f;
+    text-decoration: line-through;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.1rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #3f3f40;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.2rem;
+  }
+
+  .installment {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #3f3f40;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.2rem;
+  }
+
+  .shipping {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #3442b5;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.8rem;
+  }
+
+  .button {
+    background-color: #3442b5;
+    color: #ffffff;
+    padding: 0.7rem 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: #2832a1;
+    }
+  }
+}
